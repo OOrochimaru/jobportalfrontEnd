@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { JOBS } from '../../mock-jobs';
 
 @Component({
   selector: 'app-featuredjobs',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./featuredjobs.component.css']
 })
 export class FeaturedjobsComponent implements OnInit {
-
+jobs = JOBS;
   constructor() { }
 
   ngOnInit() {

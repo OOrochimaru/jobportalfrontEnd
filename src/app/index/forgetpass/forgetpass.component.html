@@ -1,0 +1,76 @@
+<app-header2></app-header2>
+<div class="page-header" style="background: url(assets/img/banner1.jpg);">
+  <div class="container">
+    <div class="row">         
+      <div class="col-md-12">
+        <div class="breadcrumb-wrapper">
+          <h2 class="product-title">Forget Password</h2>
+          <ol class="breadcrumb">
+            <li><a routerLink=''><i class="ti-home"></i> Home</a></li>
+           
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="spacing">
+
+<section class="section text-center" >
+  <div class="container">
+    <!-- login page here   -->
+    <div class="row">
+      <div class="col-sm-6 col-xs-12">
+          <div class="form cms-e-section">
+              <form id="frmEmployerLogin" name="frmEmployerLogin" action="employer-login.html" method="post" autocomplete="off">
+                  <input type="hidden" name="employer_login" value="1" />
+                  <div class="form-group">
+                      <label class="control-label" for="email">
+                          <span class="wc-editable" data-pk="front_label_email" data-type="text">Enter your email address</span>:</label>
+                      <input type="email" name="email" id="email" class="form-control required email" maxlength="255" autocomplete="email" data-msg-required="Email is required."
+                          data-msg-email="Email is invalid." />
+                      <div class="help-block with-errors">
+                          <ul class="list-unstyled"></ul>
+                      </div>
+                  </div>
+
+                  <div class="form-actions">
+                      <button type="submit" class="btn btn-primary btn-lg">
+                          <span class="wc-editable" data-pk="front_btn_login" data-type="action">OK</span>
+                      </button>
+
+                  </div>
+              </form>
+          </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-md-offset-2 col-xs-12">
+
+          <div class="box cms-e-section">
+              <div class="box-title">
+                  <span class="wc-editable" data-pk="front_dont_have_account" data-type="text"> Have an Account?</span>
+              </div>
+
+              <a routerLink="/login" class="btn btn-primary btn-lg">
+                  <span class="wc-editable" data-pk="front_register" data-type="text">Login</span>
+              </a>
+          </div>
+      </div>
+  </div>
+
+
+  </div>
+</section>  
+
+</div>
+<div id="copyright">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="site-info text-center">
+          <p>All copyrights reserved @ 2017 - Design & Development by <a href="http://github.com/oorochimaru/jobBoardFrontHTML">Ryamsey Ryam & Rajnesh</a></p>
+        </div>   
+      </div>
+    </div>
+  </div>
+</div>

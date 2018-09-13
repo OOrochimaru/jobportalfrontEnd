@@ -1,6 +1,6 @@
 <app-header2></app-header2>
      <!-- Page Header Start -->
-      <div class="page-header" style="background: url(assets/img/banner1.jpg);">
+<div class="page-header" style="background: url(assets/img/banner1.jpg);">
         <div class="container">
           <div class="row">         
             <div class="col-md-12">
@@ -44,16 +44,19 @@
                               <ul class="list-unstyled"></ul>
                           </div>
                       </div>
+                     
 
                       <div class="form-actions">
                           <button type="submit" class="btn btn-primary btn-lg">
                               <span class="wc-editable" data-pk="front_btn_login" data-type="action">Login</span>
                           </button>
-
-                          <a href="forget-password.html">
-                              <span class="wc-editable" data-pk="front_link_forgot_password" data-type="text">Forgot password</span>
-                          </a>
                       </div>
+                      <hr>
+                       <a [routerLink]="[ '/forget' ]">
+                        <span class="wc-editable" data-pk="front_link_forgot_password" data-type="text">Forgot password</span>
+                    </a>
+                  
+                   
                   </form>
               </div>
           </div>
@@ -65,7 +68,7 @@
                       <span class="wc-editable" data-pk="front_dont_have_account" data-type="text">Don't Have an Account?</span>
                   </div>
 
-                  <a href="signup.html" class="btn btn-primary btn-lg">
+                  <a  routerLink= '/signup' class="btn btn-primary btn-lg">
                       <span class="wc-editable" data-pk="front_register" data-type="text">Register</span>
                   </a>
               </div>

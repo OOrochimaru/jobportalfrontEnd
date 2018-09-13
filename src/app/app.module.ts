@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -15,7 +14,11 @@ import { SearchjobComponent } from './jobsearch/searchjob/searchjob.component';
 import { LoginComponent } from './index/login/login.component';
 import { AboutusComponent } from './index/aboutus/aboutus.component';
 import { Header2Component } from './index/header2/header2.component';
-
+import { ContactusComponent } from './index/contactus/contactus.component';
+import {GMapModule} from 'primeng/gmap';
+import { PostjobComponent } from './index/postjob/postjob.component';
+import { SignupComponent } from './index/signup/signup.component';
+import { ForgetpassComponent } from './index/forgetpass/forgetpass.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,13 +31,18 @@ import { Header2Component } from './index/header2/header2.component';
     LoginComponent,
     AboutusComponent,
     Header2Component,
+    ContactusComponent,
+    PostjobComponent,
+    SignupComponent,
+    ForgetpassComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
-    CarouselModule
+    CarouselModule,
+    GMapModule
   ],
   providers: [],
   bootstrap: [AppComponent]
